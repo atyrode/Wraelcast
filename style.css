@@ -1,0 +1,72 @@
+.headTitle {
+	font-size: 80px;
+	padding-bottom: 0px;
+	border-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.headFlavorText {
+	font-size: 20px;
+	margin-bottom: 110px;
+}
+
+.headTabs {
+	width: 100%;
+}
+
+.headFlexbox {
+	display: flex;
+	justify-content: center;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.headFlexbox > div {
+	display: inline-block;
+	margin: 10px;
+	padding: 20px;
+}
+
+.headMenuTitle {
+	line-height: 0px;
+	padding-top: 0px;
+	border-top: 0px;
+	margin-top: 30px;
+	font-size: 50px;
+}
+
+@font-face {
+	font-family: "Fontin";
+	src: url("css/fonts/fontin-smallcaps-webfont.woff") format("woff");
+}
+
+h1 {
+	color: #A85E28;
+	font-family: 'Fontin', Arial, sans-serif;
+	font-weight:normal;
+	font-style:normal;
+}
+
+body {
+    background-color: #131310;
+}
+
+p {
+	color: #A78E74;
+	font-family: 'Fontin', Arial, sans-serif;
+	font-weight:normal;
+	font-style:normal;
+}
+
+p wraelcast {
+	font-size: 105%;
+	font-weight: 600;
+}
+
+img.mainMenuBorder {
+	border-color: #A78E74;
+	border: 5;
+	border-style: solid;
+}

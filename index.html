@@ -3,20 +3,63 @@
   <head>
     <meta charset="utf-8">
     <title>GoE</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/smoothDivScroll.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+    <script type='text/javascript' src='js/modernizr.js'></script>
+    <script type='text/javascript' src='js/dynamicpage.js'></script>
   </head>
   <body>
+  
     <center><h1 class=headTitle>Le guide de l'Exilé</h1></center>
 	<center><p class=headFlavorText><i>Bienvenue à <wraelcast>Wraelcast</wraelcast>. Qu'importe d'où vous venez, <br> en ces terres — un seul mot d'ordre : nagez ou coulez.</i></p></center>
-	<div class="headFlexbox">
-		<div><p class=headMenuPrevious><</p></div>
-		<div><img src="assets/orbs/Three_Faces_in_the_Dark_card_art.png" class="mainMenuBorder"><center><p class=headMenuTitle>Les orbes</p></center></div>
-		<div><img src="assets/maps/The_Explorer_card_art.png" class="mainMenuBorder"><center><p class=headMenuTitle>L'Atlas</p></center></div>
-		<div><img src="assets/items/The_Hoarder_card_art.png" class="mainMenuBorder"><center><p class=headMenuTitle>Les items</p></center></div>
-		<div><img src="assets/ascendancy/The_Ethereal_card_art.png" class="mainMenuBorder"><center><p class=headMenuTitle>L'Ascendance</p></center></div>
-		<div><img src="assets/trading/The_Pact_card_art.png" class="mainMenuBorder"><center><p class=headMenuTitle>Le troc</p></center></div>
-		<div><p class=headMenuNext><</p></div>
+	
+	<div id="makeMeScrollable">
+		<div><a href="orbs.html"><img src="assets/orbs/Three_Faces_in_the_Dark_card_art.png" class="mainMenuBorder"><center><p class=headMenuTitle>Les orbes</p></center></a></div>
+		<div><a href="atlas.html"><img src="assets/maps/The_Explorer_card_art.png" class="mainMenuBorder"><center><p class=headMenuTitle>L'Atlas</p></center></div>
+		<div><a href="items.html"><img src="assets/items/The_Hoarder_card_art.png" class="mainMenuBorder"><center><p class=headMenuTitle>Les items</p></center></div>
+		<div><a href="ascendancy.html"><img src="assets/ascendancy/The_Ethereal_card_art.png" class="mainMenuBorder"><center><p class=headMenuTitle>L'Ascendance</p></center></div>
+		<div><a href="trading.html"><img src="assets/trading/The_Pact_card_art.png" class="mainMenuBorder"><center><p class=headMenuTitle>Le troc</p></center></div>
 	</div>
+	
+	<!-- LOAD JAVASCRIPT LATE - JUST BEFORE THE BODY TAG 
+	     That way the browser will have loaded the images
+		 and will know the width of the images. No need to
+		 specify the width in the CSS or inline. -->
+
+	<!-- jQuery library - Please load it from Google API's -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+
+	<!-- jQuery UI (Custom Download containing only Widget and Effects Core)
+	     You can make your own at: http://jqueryui.com/download -->
+	<script src="js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+	
+	<!-- Latest version (3.1.4) of jQuery Mouse Wheel by Brandon Aaron
+	     You will find it here: https://github.com/brandonaaron/jquery-mousewheel -->
+	<script src="js/jquery.mousewheel.min.js" type="text/javascript"></script>
+
+	<!-- jQuery Kinectic (1.8.2) used for touch scrolling -->
+	<!-- https://github.com/davetayls/jquery.kinetic/ -->
+	<script src="js/jquery.kinetic.min.js" type="text/javascript"></script>
+
+	<!-- Smooth Div Scroll 1.3 minified-->
+	<script src="js/jquery.smoothdivscroll-1.3-min.js" type="text/javascript"></script>
+
+	<!-- If you want to look at the uncompressed version you find it at
+	     js/jquery.smoothDivScroll-1.3.js -->
+
+	<!-- Plugin initialization -->
+	<script type="text/javascript">
+		// Initialize the plugin with no custom options
+		$(document).ready(function () {
+			// None of the options are set
+			$("div#makeMeScrollable").smoothDivScroll({
+				mousewheelScrolling: "allDirections",
+				manualContinuousScrolling: true,
+				autoScrollingMode: "onStart",
+				autoScrollingInterval: 15
+			});
+		});
+	</script>
   </body>
 </html>	

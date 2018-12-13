@@ -1,0 +1,47 @@
+Introduction
+
+----
+
+Catégories :
+
+- Les classes
+- Les orbes
+- Les items
+
+- Les Altérations
+- Les invocations
+- L'arbre des passif
+- Le personnage
+- Les compétences
+- L'histoire
+- Les cartes
+- La boutique
+
+
+
+
+S.O.S. - Je ne comprends rien.
+
+---------------
+
+Bienvenue à Wraelcast, exilé.
+Qu'importe d'où vous venez, en ces terres un seul mot d'ordre : nagez ou coulez.
+
+Ravi d'avoir votre attention,
+
+Vous avez probablement déjà choisi votre classe sans pour autant savoir ce que ce choix incombe. 
+Ne vous en faites pas : PoE (Path of Exile *italic*) est réputé pour sa complexité et ses mystères, vous apprendrez de votre labeur et
+triompherez des plus précieux trésors du continent.
+
+Pour l'heure, tâchez de survivre et frayez vous un chemin jusqu'Oriath.
+
+A votre gauche, votre jauge de vie, vous pouvez la survoler pour faire apparaître ses métriques.
+Il en va de même pour votre mana à droite. L'énergie dont vous vous servirez *probablement* afin de vous battre.
+
+Notez qu'il est possible d'affichez ces métriques en permanence en cochant la case [Afficher la vie et le mana] dans les Options d'Interface.
+
+Les potions à votre ceinture sont affichées en bas à gauche. Vous déterminerez de cette façon lorsque vos potions sont rechargées.
+En bas à droite, vos compétences. Celles-ci peuvent être affectées et changées à tout moment en cliquant (Emoji clic gauche) sur la case de raccourci voulue.
+
+Vous trouverez une arme sur la plage que vous pourrez ramasser afin d'attaquer et y enchasser votre première gemme de sort.
+

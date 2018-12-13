@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>GoE</title>
+	<link rel="stylesheet" type="text/css" href="css/smoothDivScroll.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+  </head>
+  <body>
+	<div class=topBox>
+		<center><h1 class=headTitle>Le guide de l'Exilé</h1></center>
+		<center><p class=headSubtitle>- Le syndicat immortel -</p></center>
+	</div>
+	
+	<center><p class=introduction><i><b>Path of Exile - Betrayal</b> vous plonge au coeur du Syndicat Immortel. <br>
+	Alors que vous parcourez Wraelcast, vous aurez l'occasion de rencontrer <b>Jun, une Maître-Cryptologue</b>. <br>
+	Cette dernière vous assistera dans le démantelèment du syndicat, afin d'affronter son cerveau et triompher de ses trésors.</i></p></center>
+	
+	<center><div>
+		<button class=menuButton id=betrayalFactionsButton><a href="javascript:SwapDivsWithClick('betrayalFactionsText')"><b>Factions</b></a></button>
+		<font class=menuSeparator>|</font>
+		<button class=menuButton id=betrayalRelationsButton><a href="javascript:SwapDivsWithClick('betrayalRelationsText')"><b>Relations et Rangs</b></a></button>
+		<font class=menuSeparator>|</font>
+		<button class=menuButton id=betrayalPrisonButton><a href="javascript:SwapDivsWithClick('betrayalPrisonText')"><b>Prison</b></a></button>
+		<font class=menuSeparator>|</font>
+		<button class=menuButton id=betrayalIntelligenceButton><a href="javascript:SwapDivsWithClick('betrayalIntelligenceText')"><b>Recherche</b></a></button>
+		<font class=menuSeparator>|</font>
+		<button class=menuButton id=betrayalSafehouseButton><a href="javascript:SwapDivsWithClick('betrayalSafehouseText')"><b>Abri</b></a></button>
+		<font class=menuSeparator>|</font>
+		<button class=menuButton id=betrayalLootsButton><a href="javascript:SwapDivsWithClick('betrayalLootsText')"><b>Récompenses</b></a></button>
+		<font class=menuSeparator>|</font>
+		<button class=menuButton id=betrayalStrategyButton><a href="javascript:SwapDivsWithClick('betrayalStrategyText')"><b>Stratégie</b></a></button>
+	</div></center>
+	
+	<hr class=style>
+
+	<div class=betrayalMenuOptions id=betrayalFactionsText>
+		<p>Le Syndicat Immortel est compos&eacute; de 4 factions, la <b class=factions>Logistique</b>, la <b class=factions>Fortification</b>,
+			la <b class=factions>Recherche</b> et l'<b class=factions>Intervention</b>.<br />Ces quatres factions repr&eacute;sente chacune un &eacute;ven&egrave;ment diff&eacute;rent 
+			lors d'une rencontre avec le Syndicat.<br /><br /><p>
+			
+		<p><b class=factionsTitle>- Logistique</b><br /><br />Vous reconna&icirc;trez la faction de la <b class=factions>Logistique</b> pour sa sp&eacute;cialisation dans le transport. 
+			<br />Lors d'une confrontation avec cette faction, ses membres tenteront de mener un convoi &agrave; un portail afin d'en d&eacute;rober le contenu. 
+			<br />Vous pourrez les arr&ecirc;ter ou les ralentir en attaquant les membres qui la compose. 
+			Si vous les capturer (en les tuant) avant qu'il ne m&egrave;ne le convoi &agrave; destination, alors vous serez ma&icirc;tre de leurs sort.<br /><br /></p>
+			
+		<p><b class=factionsTitle>- Fffortification</b><br /><br />La faction de la <b class=factions>Fortification</b> &eacute;tabli un fort sur le terrain et le défendent à l'aide de tourelles.
+		<br />Afin de faciliter le combat contre le fort, il est recommand&eacute; de d&eacute;truire ses portes pour neutraliser les totems soigneur &agrave; l'int&eacute;rieur
+		<br />Le combat n'est pas restreint par le temps et lorsque vous aurez vaincu les défendants alors vous pourrez choisir leur destin.<br /><br /></p>
+		
+		<p><b class=factionsTitle>- Recherche</b><br /><br />La faction de la <b class=factions>Recherche</b> pille des laboratoires souterrain pour détruire des preuves.
+		<br />Vous devez vaincre les monstres avant que ces derniers ne d&eacute;truisent les documents (repr&eacute;sent&eacute;es par des cercles vert sur votre map).
+		<br />A défaut, les bandits fuiront et abandonneront le laboratoire derrière eux.
+		<br />Afin de ralentir la destruction des preuves, il est recommand&eacute; de tuer les monstres <b class=jaune>rares</b> humano&iuml;des.
+		<br />Une fois les membres de la Recherche battu et captur&eacute;, les monstres du laboratoire dispara&icirc;tront et les preuves seront hors de danger.
+		<br />Vous pourrez alors d&eacute;cider de la sentence appropri&eacute;e pour les bandits.<br /><br /></p>
+		
+		<p><b class=factionsTitle>- Intervention</b><br /><br />Enfin, la faction de l'<b class=factions>Intervention</b> est la plus furtive de toute, ses membres appara&icirc;tront al&eacute;atoirement derri&egrave;re 
+		vous depuis un portail afin de tenter de vous tuer.<br />Ces derniers doivent &ecirc;tre neutralis&eacute; avant qu'ils ne vous tuent, sinon quoi, ils partiront.
+		<br />Une fois vaincu, vous serez invité à prendre une décision les concernant.<br /><br /></p>
+	</div>
+	
+	<div class=betrayalMenuOptions id=betrayalRelationsText>
+		<p>Les relations au sein du Syndicat influent sur les actions des membres.
+		<br /><br />Par exemple, si un membre de la faction <b class=factions>Logistique</b> est <b class=rivals>rival</b> avec un membre de la faction <b class=factions>Recherche</b>, 
+		alors il est probable que le membre de la <b class=factions>Logistique</b> intervienne pour vous aider lorsque vous combattrez son <b class=rivals>rival</b> de la faction <b class=factions>Recherche</b>.
+		<br />En revanche, des <b class=allies>alli&eacute;s</b> s'entraideront, rendant le combat plus compliqu&eacute; mais vous offrant plus de butin et plus d'options afin de modeler le Syndicat.<br /><br /></p>
+		<p>La <b class=allies>loyaut&eacute;</b> est represent&eacute;e par un cordon vert reliant deux cartes de membre. 
+		<br />La <b class=rivals>rivalit&eacute;</b> est represent&eacute; par un cordon rouge et les cordons jaunes repr&eacute;sente l'appartenance &agrave; une m&ecirc;me faction.
+		<br />Vous pouvez visualiser les relations des membres dans l'outil d'aide de votre panneau du Syndicat.</p>
+		<p><br />Les rangs (represent&eacute; par les &eacute;toiles sur sa carte de membre) quantifie la puissance mais aussi la qualité des butins d'un membre.
+		<br />Les rangs peuvent &ecirc;tre obtenu (ou perdu) aux travers des interactions avec un membre captur&eacute; lors d'une rencontre.
+		<br />La hi&eacute;rarchie des cartes de membre au sein d'une faction est repr&eacute;sent&eacute;e par les rangs. 
+		<br />Un membre sans rang n'appartient &agrave; aucune faction et ce jusqu'&agrave; qu'il soit promu.</p>
+	</div>
+	
+	<div class=betrayalMenuOptions id=betrayalPrisonText>
+		<p>La prison, repr&eacute;sent&eacute;e par le cadre au bas de votre tableau du Syndicat, 
+		est l'endroit o&ugrave; se trouveront les membres pour lesquel vous choisirez l'interrogation apr&egrave;s un combat victorieux.
+		<br /><br />Les prisonnier ne peuvent pas intervenir lors d'une attaque de la faction dont ils sont membres. 
+		<br />Tandis qu'ils sont retenus, ceux-ci vous offriront de l'intelligence (de la recherche) sur l'une des factions, faisant ainsi
+		<br />progresser la d&eacute;couverte de l'abri de cette derni&egrave;re.</p>
+		<p>Notez que lorsque vous envoyez un membre du Syndicat en prison, celui-ci perd un rang. 
+		<br />Si le membre n'est que Sergent (☆), alors il quittera sa faction &agrave; sa sortie de prison et se retrouvera sans faction.
+		<br /><br />Un membre envoyé en prison perd ses équipements ainsi un ennemi trop puissant peut être incarceré pour l'affaiblir à sa sortie.
+		<br />Tandis que les rangs am&eacute;liorent le butin ced&eacute; par les membres, 
+		leurs &eacute;quipements ne vous octroie pas de bonus, ils ne font qu'avantager votre ennemis en lui conf&eacute;rant des bonus.</p>
+		<p>Un membre va en prison pour trois tours. Un tour est repr&eacute;sent&eacute; par une interaction avec un membre du Syndicat (apr&egrave;s l'avoir vaincu).</p>
+	</div>
+	
+	<div class=betrayalMenuOptions id=betrayalIntelligenceText>
+		<p>La recherche repr&eacute;sente votre progression dans la d&eacute;couverte de l'abri de l'un des cinq abris du Syndicat.
+		<br /><br />L'avancement est traduit par une barre bleue se trouvant dans le cadre du chef de l'un des cinq abris.
+		<br />Vous pouvez gagner de l'intelligence apr&egrave;s une victoire contre l'une des factions. 
+		<br /><br />Un membre captur&eacute; vous suggèrera deux possibilit&eacute;es, 
+		celle de droite sera syst&eacute;matiquement de l'incarc&eacute;ration tandis que l'option de gauche vous proposera des objets, de l'intelligence, des promotions, 
+		de l'interaction sur les relations des membres et d'autres possibilit&eacute;es &agrave; d&eacute;couvrir.</p>
+		<p>Lorsqu'il vous sera propos&eacute; de l'intelligence (nomm&eacute;e Renseignement en jeu), sous forme d'un bonus tel que : 
+		<br /><b class=factions><i>+5 Renseignement(s) sur la section Logistique</i></b>
+		<br />Alors vous ferez progresser la recherche de l'abri de la <b class=factions>Logistique</b> de 4%.</p>
+		<p>Une fois les 100% atteint, un bouton [Abri] remplacera la barre de progression de recherche et lorsque vous parlerez &agrave; Jun, cliquer sur [Abri]
+		vous ouvrira un portail vers celui de la faction concern&eacute;e.</p>
+	</div>
+	
+	<div class=betrayalMenuOptions id=betrayalSafehouseText>
+		<p>Les abris des factions sont une zone dont Jun vous d&eacute;bloque l'acc&egrave;s 5 fois. Si vous mourrez dans l'abri, alors vous reviendrez &agrave; l'entr&eacute;e et consommerez l'une de vos chance.<br />A l'int&eacute;rieur d'un abri, la carte vous est r&eacute;vel&eacute;e et vous devez la traverser afin de vous rendre dans une ar&egrave;ne vous mettant face au chef de la faction attaqu&eacute;e. <br />Les diff&eacute;rents membre de la faction se joindront au c&ocirc;t&eacute; de leurs chef, rendant le combat plus difficile.</p>
+		<p>Si vous sortez victorieux, alors Jun vous laissera d&eacute;cider du sort du chef de faction et vous ouvrira l'acc&egrave;s &agrave; la salle des tr&eacute;sors.<br />Le fonctionnement de l'assaut de l'abri du Cerveau fonctionne de mani&egrave;re similaire.</p>
+	</div>
+	
+	<div class=betrayalMenuOptions id=betrayalLootsText>
+		<p>Il existe deux source de butin venant du Syndicat : lorsque vous d&eacute;cider de la sentence d'un membre apr&egrave;s l'avoir vaincu et lorsque vous vous rendez dans la salle des tr&eacute;sors d'un abri.<br />Notez que les r&eacute;compenses de la salle des tr&eacute;sors d&eacute;pendent de deux facteurs : le nombre de membres dans la faction attaqu&eacute;es et les membres qui la compose.<br />Si la faction que vous d&eacute;fiez est compos&eacute;es de trois membre, la salle des tr&eacute;sors sera compos&eacute;es de trois salles, et ainsi de suite.<br />De plus, la nature des r&eacute;compenses dans chacune des salles d&eacute;pendera des membres qui composent la faction ainsi que leurs rang.</p>
+		<p>Leurs rang am&eacute;liorera la qualit&eacute;e g&eacute;n&eacute;rale du butin tandis que chaque membre influencera une salle en particulier. Si la carte d'un membre de la faction &agrave; pour texte "Fait de la contrebande d'essence" par exemple,<br />alors il est propable que l'une des salles des tr&eacute;sors contiennent un butin en rapport avec les essences.</p>
+		<p><br />La mise &agrave; jour Path of Exile : Betrayal ajoute une nouvelle propri&eacute;t&eacute; d'&eacute;quipement : crypt&eacute;. Cette propri&eacute;t&eacute; peut &ecirc;tre trouv&eacute;e sur les objets que le Syndicat c&egrave;de.</p>
+		<p>Un &eacute;quipement crypt&eacute; peut &ecirc;tre d&eacute;crypt&eacute; par Jun, lorsque vous lui parler et choissisez l'option "D&eacute;crypter un objet". <br />Vous pourrez alors d&eacute;poser un objet dans la case de d&eacute;cryptage et choisir l'une des trois propri&eacute;t&eacute;es propos&eacute;es et celle-ci sera appliqu&eacute;e sur l'objet.<br />Les propri&eacute;t&eacute;es offertes par le d&eacute;cryptage peuvent &ecirc;tre propre &agrave; ce proced&eacute;, il est donc possible de fabriquer des objets plus puissant qu'auparavant.</p>
+	</div>
+	
+	<div class=betrayalMenuOptions id=betrayalStrategyText>
+		<p>Votre but au sein du Syndicat sera d'accumuler de l'intelligence sur le Cerveau afin de le combattre et triompher du Syndicat.<br />Lors de votre parcours, vous serez &agrave; mener &agrave; attaquer divers abris et accumuler du butin, en manipulant le Syndicat et en profitant des conflits internes pour influer sur votre progression.</p>
+		<p>Afin de progresser plus rapidement dans votre Syndicat, il est important de cr&eacute;er des relations au sein de celui-ci afin de pimenter vos combats et jouir de plus de contr&ocirc;le sur le Syndicat.<br />En effet, apr&egrave;s une rencontre, un membre vaincu = une d&eacute;cision sur le Syndicat. Jusque trois membres peuvent vous attaquer &agrave; la fois, mais notez que lorsque vous achever l'un des membres du combat, alors les autres fuiront<br />si vous tardez &agrave; les battres.</p>
+		<p>Notez &eacute;galement que la d&eacute;cision prise sur l'un de membres influe les d&eacute;cisions propos&eacute;es par les autres membres lors d'une rencontre, puisque chaque d&eacute;cision in&eacute;vitablement de toute fa&ccedil;on toutes les rencontres &agrave; venir.<br />De ce fait, il vaut mieux inspecter les trois d&eacute;tenus et prendre compte que les d&eacute;cisions changeront &agrave; chaque tour (un tour repr&eacute;sente une interaction avec le Syndicat).</p>
+		<p>Des membres loyaux proposeront plus souvent de trahir leurs partenaire, vous permettant ainsi de d&eacute;placer les membres au sein du Syndicat, voir m&ecirc;me les en exp&eacute;dier, si ceci vous b&eacute;n&eacute;ficie dans votre strat&eacute;gie.<br />Des relations hostile vous donnera plus d'opportunit&eacute; d'executer les d&eacute;tenus, vous permettant de leurs faire monter en rang (eh oui, c'est le Syndicat Immortel).</p>
+		<p>L'interaction entre les relations est importante dans l'influence des choix qui vous seront propos&eacute;s contre un membre vaincu, je n'ai pas pour vocation de vous donner une strat&eacute;gie &agrave; suivre, mais plut&ocirc;t d'en comprendre la surface.<br />Je vous invite &agrave; construire votre propre strat&eacute;gie et observer comment les param&egrave;tres de votre Syndicat changeront les d&eacute;cisions que vous pourrez prendre &agrave; l'&eacute;gar de celui-ci.<br />Vous trouverez plus de d&eacute;tails sur le Syndicat, ses r&eacute;compenses et son fonctionnement dans la section ci-dessous, mais celle-ci r&eacute;v&egrave;le une grande partie du contenu de la mise &agrave; jour, aventurez vous-y en connaissance de cause.</p>
+		<p>Aussi, bonne chance pour le Cerveau. Vraiment.</p>
+	</div>
+	
+	<script type="text/javascript">
+		function SwapDivsWithClick(v)
+		{	
+			
+			factions = document.getElementById("betrayalFactionsText");
+			relations = document.getElementById("betrayalRelationsText");
+			prison = document.getElementById("betrayalPrisonText");
+			intelligence = document.getElementById("betrayalIntelligenceText");
+			safehouse = document.getElementById("betrayalSafehouseText");
+			loots = document.getElementById("betrayalLootsText");
+			strategy = document.getElementById("betrayalStrategyText");
+			
+			body = document.getElementById(v);
+			
+			for (var i = 0; i < 7; i++) {
+				factions.style.display = "none";
+				relations.style.display = "none";
+				prison.style.display = "none";
+				intelligence.style.display = "none";
+				safehouse.style.display = "none";
+				loots.style.display = "none";
+				strategy.style.display = "none";
+			}
+			
+			body.style.display = "block";
+		}
+	</script>
+  </body>
+</html>	
+

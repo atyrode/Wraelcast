@@ -1,9 +1,15 @@
 .headTitle {
 	font-size: 80px;
-	padding-bottom: 0px;
-	border-bottom: 0px;
-	margin-bottom: 0px;
+	display: inline;
 }
+
+.headSubtitle {
+	font-size: 20px;
+	margin-bottom: 70px;
+	font-size: 220%;
+	font-weight: 600;
+}
+
 
 .headFlavorText {
 	font-size: 20px;
@@ -37,6 +43,54 @@
 	font-size: 50px;
 }
 
+.introduction {
+	font-size: 20px;
+	margin-bottom: 50px;
+	font-size: 180%;
+}
+
+.betrayalMenuOptions {
+	display: none;
+	text-align: justify;
+	margin: 0 auto;
+	width: 100em;
+}
+
+.factions {
+	color: #8888ff;
+}
+
+.factionsTitle {
+	color: #8888ff;
+	font-size: 125%;
+}
+
+.jaune {
+	color: #f2c462;
+}
+
+.rivals {
+	color: #f60239;
+}
+
+.allies {
+	color: #4c9d49;
+}
+	
+hr.style {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	margin-bottom: 40px;
+}
+
+div.betrayalMenuOptions p {
+	font-size: 155%;
+	font-weight: 600;
+}
+
+
 #makeMeScrollable {
 	width:100%;
 	height: 440px;
@@ -49,8 +103,8 @@
 #makeMeScrollable div.scrollableArea div {
 	position: relative;
 	float: left;
-	margin: 20px;
-	padding: 50px;
+	margin: 5px;
+	padding: 40px;
 	/* If you don't want the images in the scroller to be selectable, try the following
 	   block of code. It's just a nice feature that prevent the images from
 	   accidentally becoming selected/inverted when the user interacts with the scroller. */
@@ -99,4 +153,26 @@ img.mainMenuBorder {
 	border-color: #A78E74;
 	border: 5;
 	border-style: solid;
+}
+
+.menuButton {
+	border: none;
+	background-color: inherit;
+	padding: 7px 14px;
+	font-size: 40px;
+	cursor: pointer;
+	display: inline-block;
+	color: #A85E28;
+	font-family: 'Fontin', Arial, sans-serif;
+	font-weight:normal;
+	font-style:normal;
+}
+
+.menuSeparator {
+	color: #A78E74;
+	font-weight: 600;
+	font-family: 'Fontin', Arial, sans-serif;
+	font-style: normal;
+	font-size: 40px;
+	padding: 7px 14px;
 }

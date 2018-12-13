@@ -162,10 +162,6 @@ nav ul li {
  line-height: 3em;
 }
 
-nav ul li:hover {
-  background: #A78E74;
-}
-
 
 @font-face {
 	font-family: "Fontin";
@@ -215,6 +211,19 @@ img.mainMenuBorder {
 	cursor: pointer;
 	display: inline-block;
 	color: #A85E28;
+	font-family: 'Fontin', Arial, sans-serif;
+	font-weight:normal;
+	font-style:normal;
+}
+
+.menuButton:hover {
+	border: none;
+	background-color: inherit;
+	padding: 7px 14px;
+	font-size: 40px;
+	cursor: pointer;
+	display: inline-block;
+	color: #7EBDC2;
 	font-family: 'Fontin', Arial, sans-serif;
 	font-weight:normal;
 	font-style:normal;

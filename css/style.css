@@ -237,3 +237,19 @@ img.mainMenuBorder {
 	font-size: 40px;
 	padding: 7px 14px;
 }
+
+.imgBorder {
+	border: 2px solid #A78E74;
+	vertical-align: middle;
+	display: table-cell;
+	margin-right: 2em;
+}
+
+.betrayalFormatting {
+  display: table;
+}
+
+span {
+  vertical-align: middle;
+  display: table-cell;
+}

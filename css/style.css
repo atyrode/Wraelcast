@@ -258,6 +258,11 @@ img.mainMenuBorder {
 	margin-right: 0em;
 }
 
+#imgCentered {
+	margin-left: 0em;
+	margin-right: 0em;
+}
+
 .betrayalFormatting {
   display: table;
 }

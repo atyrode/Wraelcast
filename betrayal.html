@@ -12,26 +12,24 @@
 		<center><p class=headSubtitle>- Le syndicat immortel -</p></center>
 	</div>
 	
-	<div id=navbartmp>
-		<center><nav class=navbar>
-			<ul>
-				<li><button class=menuButton id=betrayalFactionsButton><a href="javascript:SwapDivsWithClick('betrayalFactionsText')"><b>Factions</b></a></button></li>
-				<b class=menuSeparator>|</b>
-				<li><button class=menuButton id=betrayalRelationsButton><a href="javascript:SwapDivsWithClick('betrayalRelationsText')"><b>Relations et Rangs</b></a></button></li>
-				<b class=menuSeparator>|</b>
-				<li><button class=menuButton id=betrayalPrisonButton><a href="javascript:SwapDivsWithClick('betrayalPrisonText')"><b>Prison</b></a></button></li>
-				<b class=menuSeparator>|</b>
-				<li><button class=menuButton id=betrayalIntelligenceButton><a href="javascript:SwapDivsWithClick('betrayalIntelligenceText')"><b>Recherche</b></a></button></li>
-				<b class=menuSeparator>|</b>
-				<li><button class=menuButton id=betrayalSafehouseButton><a href="javascript:SwapDivsWithClick('betrayalSafehouseText')"><b>Abri</b></a></button></li>
-				<b class=menuSeparator>|</b>
-				<li><button class=menuButton id=betrayalLootsButton><a href="javascript:SwapDivsWithClick('betrayalLootsText')"><b>Récompenses</b></a></button></li>
-				<b class=menuSeparator>|</b>
-				<li><button class=menuButton id=betrayalStrategyButton><a href="javascript:SwapDivsWithClick('betrayalStrategyText')"><b>Stratégie</b></a></button></li>
-			</ul>
-			<hr class=style>
-		</nav></center>
-	</div>
+	<center><nav class=navbar id=navbartmp>
+		<ul>
+			<li><button class=menuButton id=betrayalFactionsButton onclick="javascript:SwapDivsWithClick('betrayalFactionsText')"><b>Factions</b></button></li>
+			<b class=menuSeparator>|</b>
+			<li><button class=menuButton id=betrayalRelationsButton onclick="javascript:SwapDivsWithClick('betrayalRelationsText')"><b>Relations et Rangs</b></button></li>
+			<b class=menuSeparator>|</b>
+			<li><button class=menuButton id=betrayalPrisonButton onclick="javascript:SwapDivsWithClick('betrayalPrisonText')"><b>Prison</b></button></li>
+			<b class=menuSeparator>|</b>
+			<li><button class=menuButton id=betrayalIntelligenceButton onclick="javascript:SwapDivsWithClick('betrayalIntelligenceText')"><b>Recherche</b></button></li>
+			<b class=menuSeparator>|</b>
+			<li><button class=menuButton id=betrayalSafehouseButton onclick="javascript:SwapDivsWithClick('betrayalSafehouseText')"><b>Abri</b></button></li>
+			<b class=menuSeparator>|</b>
+			<li><button class=menuButton id=betrayalLootsButton onclick="javascript:SwapDivsWithClick('betrayalLootsText')"><b>Récompenses</b></button></li>
+			<b class=menuSeparator>|</b>
+			<li><button class=menuButton id=betrayalStrategyButton onclick="javascript:SwapDivsWithClick('betrayalStrategyText')"><b>Stratégie</b></button></li>
+		</ul>
+		<hr class=style>
+	</nav></center>
 	
 	
 	<div class=content>
@@ -197,8 +195,7 @@
 	
 	<script type="text/javascript">
 		function SwapDivsWithClick(v)
-		{	
-			console.log("here!")
+		{
 			factions = document.getElementById("betrayalFactionsText");
 			relations = document.getElementById("betrayalRelationsText");
 			prison = document.getElementById("betrayalPrisonText");

@@ -61,6 +61,10 @@
 	color: #8888ff;
 }
 
+.members {
+	color: #A0A0A0;
+}
+
 .factionsTitle {
 	color: #8888ff;
 	font-size: 125%;
@@ -76,6 +80,10 @@
 
 .allies {
 	color: #4c9d49;
+}
+
+.neutral {
+	color: #CCCC00;
 }
 
 .flavorText {
@@ -245,6 +253,10 @@ img.mainMenuBorder {
 	margin-right: 2em;
 }
 
+#imgBorderLeft {
+	margin-left: 2em;
+}
+
 .betrayalFormatting {
   display: table;
 }
@@ -253,3 +265,4 @@ span {
   vertical-align: middle;
   display: table-cell;
 }
+

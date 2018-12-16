@@ -11,25 +11,26 @@
 		<center><h1 class=headTitle><a href="index.html">Le guide de l'Exilé</a></h1></center>
 		<center><p class=headSubtitle>- Le syndicat immortel -</p></center>
 	</div>
-	
-	<center><nav class=navbar id=navbartmp>
-		<ul>
-			<li><button class=menuButton id=betrayalFactionsButton onclick="javascript:SwapDivsWithClick('betrayalFactionsText')"><b>Factions</b></button></li>
-			<b class=menuSeparator>|</b>
-			<li><button class=menuButton id=betrayalRelationsButton onclick="javascript:SwapDivsWithClick('betrayalRelationsText')"><b>Relations et Rangs</b></button></li>
-			<b class=menuSeparator>|</b>
-			<li><button class=menuButton id=betrayalPrisonButton onclick="javascript:SwapDivsWithClick('betrayalPrisonText')"><b>Prison</b></button></li>
-			<b class=menuSeparator>|</b>
-			<li><button class=menuButton id=betrayalIntelligenceButton onclick="javascript:SwapDivsWithClick('betrayalIntelligenceText')"><b>Recherche</b></button></li>
-			<b class=menuSeparator>|</b>
-			<li><button class=menuButton id=betrayalSafehouseButton onclick="javascript:SwapDivsWithClick('betrayalSafehouseText')"><b>Abri</b></button></li>
-			<b class=menuSeparator>|</b>
-			<li><button class=menuButton id=betrayalLootsButton onclick="javascript:SwapDivsWithClick('betrayalLootsText')"><b>Récompenses</b></button></li>
-			<b class=menuSeparator>|</b>
-			<li><button class=menuButton id=betrayalStrategyButton onclick="javascript:SwapDivsWithClick('betrayalStrategyText')"><b>Stratégie</b></button></li>
-		</ul>
-		<hr class=style>
-	</nav></center>
+	<div id=navbartmp>
+		<center><nav class=navbar>
+			<ul>
+				<li><button class=menuButton id=betrayalFactionsButton onclick="javascript:SwapDivsWithClick('betrayalFactionsText')"><b>Factions</b></button></li>
+				<b class=menuSeparator>|</b>
+				<li><button class=menuButton id=betrayalRelationsButton onclick="javascript:SwapDivsWithClick('betrayalRelationsText')"><b>Relations et Rangs</b></button></li>
+				<b class=menuSeparator>|</b>
+				<li><button class=menuButton id=betrayalPrisonButton onclick="javascript:SwapDivsWithClick('betrayalPrisonText')"><b>Prison</b></button></li>
+				<b class=menuSeparator>|</b>
+				<li><button class=menuButton id=betrayalIntelligenceButton onclick="javascript:SwapDivsWithClick('betrayalIntelligenceText')"><b>Recherche</b></button></li>
+				<b class=menuSeparator>|</b>
+				<li><button class=menuButton id=betrayalSafehouseButton onclick="javascript:SwapDivsWithClick('betrayalSafehouseText')"><b>Abri</b></button></li>
+				<b class=menuSeparator>|</b>
+				<li><button class=menuButton id=betrayalLootsButton onclick="javascript:SwapDivsWithClick('betrayalLootsText')"><b>Récompenses</b></button></li>
+				<b class=menuSeparator>|</b>
+				<li><button class=menuButton id=betrayalStrategyButton onclick="javascript:SwapDivsWithClick('betrayalStrategyText')"><b>Stratégie</b></button></li>
+			</ul>
+			<hr class=style>
+		</nav></center>
+	</div>
 	
 	
 	<div class=content>
@@ -105,29 +106,29 @@
 		</div>
 		
 		<div class=betrayalMenuOptions id=betrayalRelationsText>
-			<center><p>Les relations au sein du Syndicat influent sur les actions des membres entre eux.</p></center>
+			<center><p>Les relations au sein du Syndicat influent sur les actions des membres entre eux lors de votre prise de choix suite à une victoire.</p></center>
 			
 			<br /><br />
 					
 			<span>
 				<p>La <b class=allies>loyaut&eacute;</b> est represent&eacute;e par un cordon vert reliant deux cartes de membre. 
 				<br />La <b class=rivals>rivalit&eacute;</b> est represent&eacute; par un cordon rouge et les cordons <b class=neutral>jaunes</b> repr&eacute;sentent l'appartenance &agrave; une m&ecirc;me faction.
-				<p>Dans l'exemple à droite, <b class=members>Elréon</b> (☆☆☆) de la faction <b class=factions>Recherche</b> est <b class=rivals>rival</b> avec <b class=members>Hillock</b> (sans faction).
+				<p><br />Dans l'exemple à droite, <b class=members>Elréon</b> (☆☆☆) de la faction <b class=factions>Recherche</b> est <b class=rivals>rival</b> avec <b class=members>Hillock</b> (sans faction).
 				Il est donc probable qu'<b class=members>Hillock</b> vienne vous aider lorsque vous attaquerez la faction <b class=factions>Recherche</b>. Facilitant le combat, mais réduisant le butin.
-				<br /><br />En revanche, des <b class=allies>alli&eacute;s</b> s'entraideront, rendant le combat plus compliqu&eacute; mais vous offrant plus de butin. <br /><br />
-				<br />Vous pouvez montrer ou cacher les relations des membres dans l'outil d'aide de votre panneau du Syndicat.</p>
+				<br /><br />En revanche, des <b class=allies>alli&eacute;s</b> s'entraideront, rendant le combat plus compliqu&eacute; mais vous offrant plus de butin. <br />
+				<br />Notez que les relations influent également sur les choix proposés par les membres vaincus après une rencontre sur le terrain.</p>
 			</span>
 			<span>
 				<img src="assets/betrayal/relations.jpg" height="493" width="494" class=imgBorder id=imgBorderLeft>
 			</span>
 			
-			<br /><br /><br /><br />
+			<br /><br /><p>Vous pouvez montrer ou cacher les relations des membres dans l'outil d'aide de votre panneau du Syndicat.</p><br /><br />
 
 			<span>
 				<img src="assets/betrayal/ranks.jpg" height="500" width="900" class=imgBorder>
 			</span>
 			<span>
-				<p><br />Les rangs (represent&eacute;s par les &eacute;toiles sur les cartes de membre) quantifient la puissance mais aussi la qualité des butins d'un membre.
+				<p>Les rangs (represent&eacute;s par les &eacute;toiles sur les cartes de membre) quantifient la puissance mais aussi la qualité des butins d'un membre.
 				<br /><br />Les rangs peuvent &ecirc;tre obtenu (ou perdu) aux travers des interactions avec un membre captur&eacute; lors d'une rencontre.<br /><br />
 				<br />La position des cartes des membres au sein d'une faction dépend de la hiérachie interne à la faction (représentée par les rangs). <br />
 				<br />Un membre sans rang n'appartient &agrave; aucune faction et ce jusqu'&agrave; qu'il soit promu.</p>
@@ -135,7 +136,7 @@
 			
 			<br /><br />
 			
-			<p><br />Prenons la faction de la <b class=factions>Recherche</b> dans l'exemple ci-dessus. 
+			<p>Prenons la faction de la <b class=factions>Recherche</b> dans l'exemple ci-dessus. 
 			<br /><br /><b class=members>Elréon</b> (☆☆☆) est à la tête de la faction et <b class=members>Caméria</b> (☆☆), est sa subordonné.
 			<br /><b class=members>Tora</b>, elle, n'est que de rang (☆) et est la subordonnée de <b class=members>Caméria</b>. Tout trois seront donc présent lorsque vous attaquerez leurs abris.
 			

@@ -253,6 +253,14 @@ img.mainMenuBorder {
 	margin-right: 2em;
 }
 
+.videoBorder {
+	border: 2px solid #A78E74;
+	vertical-align: middle;
+	display: flex;
+	margin-right: 2em;
+	margin-left: 2em;
+}
+
 #imgBorderLeft {
 	margin-left: 2em;
 	margin-right: 0em;

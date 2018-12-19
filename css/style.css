@@ -287,3 +287,15 @@ span {
   display: table-cell;
 }
 
+.lootGridButton {
+	border: none;
+	background-color: inherit;
+	padding: 7px 14px;
+	font-size: 40px;
+	cursor: pointer;
+	display: inline-block;
+	color: #A85E28;
+	font-family: 'Fontin', Arial, sans-serif;
+	font-weight:normal;
+	font-style:normal;
+}

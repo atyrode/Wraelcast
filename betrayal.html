@@ -103,6 +103,8 @@
 					<br />Une fois vaincu, vous serez invité à prendre une décision les concernant.<br /><br /></p>
 				</span>
 			</div>
+			<br /><br />
+			<p>Le Syndicat Immortel apparaîtra sur n'importe quelle carte après le tutoriel lors de la ligue Betrayal, c'est de cette façon que vous pourrez les combattre et faire progresser votre Syndicat.</p>
 		</div>
 		
 		<div class=betrayalMenuOptions id=betrayalRelationsText>
@@ -208,7 +210,7 @@
 			<br /><br />
 			
 			<p>Une fois les 100% atteint, un bouton [Abri] remplacera la barre de progression de recherche et lorsque vous parlerez &agrave; Jun, cliquer sur [Abri]
-			vous ouvrira un portail vers celui de la faction concern&eacute;e.</p>
+			vous ouvrira 5 portails la faction concern&eacute;e.</p>
 			
 			<center><img src="assets/betrayal/safehousebutton.jpg" class=imgBorder id=imgCentered></center>
 		</div>
@@ -261,7 +263,7 @@
 			<br />		- <b class=members>Le nombre de membres dans la faction attaqu&eacute;es </b>: la salle aux trésors de l'abri contiendra une salle au trésor pour chaque membre se trouvant dans la faction au moment de l'attaque.<br />
 			<br />		- <b class=members>Les membres qui la composent</b> : puisque chaque salle correspond à un membre, le butin qui s'y trouve dépend également du membre en question. Attention, un membre ne donnera pas le même butin dans l'abri selon la faction dans laquelle il se trouve.<br />
 			<br />		- <b class=members>Leurs rangs</b> : la qualité ou la nature du butin de la salle générée par un membre dépendera également de son rang. Le plus haut étant, généralement, le meilleur.<br />
-			<br /><br /></p>
+			<br /></p>
 			
 			<span>
 				<video autoplay="autoplay" muted loop width="620" height="565" id=videoRightBorder>
@@ -270,14 +272,28 @@
 			</span>
 			
 			<span>
-				<p><br />La mise &agrave; jour Path of Exile : Betrayal ajoute une nouvelle propri&eacute;t&eacute; d'&eacute;quipement : crypt&eacute;. <br />
+				<p>La mise &agrave; jour Path of Exile : Betrayal ajoute une nouvelle propri&eacute;t&eacute; d'&eacute;quipement : crypt&eacute;. <br />
 				<br />Cette propri&eacute;t&eacute; peut &ecirc;tre trouv&eacute;e sur les objets que le Syndicat c&egrave;de.</p>
-				<p>Un &eacute;quipement crypt&eacute; peut &ecirc;tre d&eacute;crypt&eacute; par Jun, lorsque vous lui parler et choissisez l'option "D&eacute;crypter un objet". <br />
+				<p>Un &eacute;quipement crypt&eacute; peut &ecirc;tre d&eacute;crypt&eacute; par Jun, lorsque vous lui parlez et choissisez l'option "D&eacute;crypter un objet". <br />
 				<br />Vous pourrez alors d&eacute;poser un objet dans la case de d&eacute;cryptage et choisir l'une des trois propri&eacute;t&eacute;es propos&eacute;es et celle-ci sera appliqu&eacute;e sur l'objet.<br />
 				<br />Les propri&eacute;t&eacute;es offertes par le d&eacute;cryptage peuvent &ecirc;tre propre &agrave; ce proced&eacute;, il est donc possible de fabriquer des objets plus puissant qu'auparavant.</p>
 				<p>Enfin, la propri&eacute;t&eacute; crypt&eacute;e sera sauvegardé dans l'établi d'artisan de votre repaire et vous pourrez la ré-appliquer sur d'autres objets à votre guise.</p>
 			</span>
 			
+			<br /><br /><br />
+			
+			<center>
+				<button class=lootGridButton title="Afficher/masquer la grille de butin" type="button" onclick="if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}">- Montrer/masquer la grille de butin -</button>	
+			</center>
+			
+			<br /><br />
+			
+			<div id="spoiler" style="display:none">
+				<center>
+					<img src="assets/betrayal/rewards.png" width="1600" height="665" class=imgBorder>
+				</center>
+			</div>
+		
 		</div>
 		
 		<div class=betrayalMenuOptions id=betrayalStrategyText>
